@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Appointment_Booking">
+
+    <LinearLayout
+        android:id="@+id/profilelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_toolbar_translucent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+<!--        <ImageView-->
+<!--            android:layout_width="28dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+
+<!--            android:src="@drawable/calendardate" />-->
+
+        <!--        <Button-->
+
+        <!--            android:id="@+id/button_datepicker"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="#2196F3"-->
+        <!--            android:text="تكلفة الجلسة"-->
+        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+        <!--            app:layout_constraintRight_toRightOf="parent" />-->
+        <!--        <DatePicker-->
+        <!--            android:id="@+id/text_datepicker"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"/>-->
+        <TextView
+            android:id="@+id/text_datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" يرجى اختيار التاريخ "
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/alwadi"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text_datepicker"-->
+    <!--        android:layout_width="229dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Select Date"-->
+    <!--        android:textSize="15dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_datepicker"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/text_datepicker"-->
+    <!--        android:background="#34E91E63"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Open Datepicker"-->
+    <!--        android:textSize="20dp" />-->
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilelinear"
+        android:foreground="?android:selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="@dimen/cardview_compat_inset_shadow">
+
+        <!--        <View-->
+        <!--            android:id="@+id/view1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:background="@color/alwadi" />-->
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rvNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

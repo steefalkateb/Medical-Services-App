@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.example.alwadi"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+//    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    ///////////////////Android Tinder Swipe View Example//////////////////////
+//    https://www.youtube.com/watch?v=0aVsBdGoL-c
+//    https://blog.mindorks.com/android-tinder-swipe-view-example-3eca9b0d4794
+//    https://stackoverflow.com/questions/55677041/how-to-access-recyclerview-in-androidx
+//    https://github.com/janishar/Tutorials
+
+//    Create Tinder Swipe in Fragment
+//    https://www.youtube.com/watch?v=az-rBFx6cXc
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.mindorks:placeholderview:0.7.1'
+    ///////////////////Android Tinder Swipe View Example//////////////////////
+//    https://androidexample365.com/a-tinder-style-swipeable-deck-view-for-android/
+    implementation 'link.fls:swipestack:0.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    ///////////////////////////////////////////////////////////////////////////
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.rom4ek:arcnavigationview:1.0.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+//    implementation 'com.squareup.picasso:picasso:2.71828'
+///////////////////////////////
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+//    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+///https://www.youtube.com/watch?v=QdrJg0MFtOE////
+//    https://github.com/hdodenhof/CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+//Date
+//
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+//    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha04'
+
+//
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.diegodobelo.expandingview:expanding-view:0.9.4'
+
+
+//    implementation 'androidx.appcompat:appcompat:1.3.0-rc01'
+//    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
+
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+
+
+//    to forget password
+//    https://www.youtube.com/watch?v=ZbosRfH1SnM
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+//    to forget password
+
+}

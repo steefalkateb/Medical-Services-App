@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".ui.doctors.Booking_Select_Doctor">
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:orientation="vertical">-->
+    <LinearLayout
+        android:id="@+id/profilelinear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_toolbar_translucent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/profilelinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+
+            android:id="@+id/list_slidermenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+
+            android:layout_marginBottom="50dp"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="1dp"></ListView>
+        <!--        android:divider="#ececec"-->
+
+        <!--        <ListView-->
+        <!--            android:id="@+id/list_slidermenu"-->
+        <!--            android:layout_width="match_parent"-->
+
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            android:divider="#E11919"-->
+        <!--            android:dividerHeight="0dp"></ListView>-->
+        <!--        <ListView-->
+
+        <!--            android:id="@+id/list_slidermenu"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="right"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:layout_marginBottom="50dp"-->
+        <!--            android:choiceMode="singleChoice"-->
+        <!--            android:dividerHeight="1dp"></ListView>-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

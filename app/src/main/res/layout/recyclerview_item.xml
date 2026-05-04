@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+<!--        android:fontFamily="@font/bellerose"-->
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/alwadi"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Available"
+            android:textColor="@color/grey"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/info_text"-->
+    <!--            android:layout_width="92dp"-->
+    <!--            android:layout_height="61dp"-->
+    <!--            android:background="@color/colorAccent"-->
+    <!--            android:fontFamily="@font/bellerose"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textColor="@color/colorPrimary" />-->
+
+</LinearLayout>

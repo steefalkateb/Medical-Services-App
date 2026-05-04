@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MainActivity">
+
+
+    <!--    <item-->
+    <!--        android:id="@+id/notices"-->
+    <!--        android:icon="@drawable/ic_notifications_black_24dp"-->
+    <!--        android:orderInCategory="200"-->
+    <!--        android:title="Search"-->
+
+    <!--        app:showAsAction="ifRoom"></item>-->
+
+
+    <item
+        android:id="@+id/notices"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:orderInCategory="200"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_Attend"
+        app:actionLayout="@layout/logo_name_app"
+        app:showAsAction="always"
+        android:title="Notifications" />
+<!--    <item-->
+<!--        android:id="@+id/action_notification"-->
+<!--        app:actionLayout="@layout/nav_header_main"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="Notifications" />-->
+<!--    <item-->
+<!--        android:id="@+id/action_Update"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Update"-->
+<!--        app:showAsAction="never" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/action_Rating"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Rating"-->
+<!--        app:showAsAction="never" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/action_settings"-->
+<!--        android:orderInCategory="300"-->
+<!--        android:title="@string/app_name"-->
+<!--        app:showAsAction="never" />-->
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/action_favorite"-->
+<!--        android:orderInCategory="300"-->
+<!--        android:title="User"-->
+<!--        android:icon="@drawable/ic_notifications_black_24dp"-->
+<!--        app:showAsAction="ifRoom"></item>-->
+
+
+<!--    <item-->
+    <!--        android:id="@+id/action_settings"-->
+    <!--        android:orderInCategory="1"-->
+    <!--        android:title="TODO"-->
+    <!--        android:titleCondensed="@string/app_name"-->
+    <!--        app:showAsAction="ifRoom"></item>-->
+
+
+    <!--        <item-->
+    <!--            android:id="@+id/logo_pro"-->
+    <!--            android:icon="@drawable/logo_pro"-->
+    <!--            android:orderInCategory="1"-->
+    <!--            android:title="Search"-->
+    <!--            app:showAsAction="always"/>-->
+
+    <!--        ></item>-->
+
+    <!--    <item android:id="@+id/new_activity"-->
+    <!--        android:layout_gravity="right|center_vertical"-->
+    <!--        android:icon="@drawable/logo_pro"-->
+    <!--        android:title="@string/app_name"-->
+    <!--        app:showAsAction="always"-->
+    <!--        />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/miProfile"-->
+    <!--        app:showAsAction="ifRoom"-->
+    <!--        android:icon="@color/colorPrimary"-->
+
+    <!--        android:title="Profile">-->
+    <!--    </item>-->
+
+</menu>

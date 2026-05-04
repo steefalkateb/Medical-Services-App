@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f5f5f5"
+    tools:context=".ui.services.Clinic_Dermatophytes">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+
+            android:id="@+id/list_slidermenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginBottom="50dp"
+            android:choiceMode="singleChoice"
+          ></ListView>
+
+<!--        android:divider="#ececec"-->
+<!--        android:dividerHeight="1dp"-->
+        <!--        <ListView-->
+
+        <!--            android:id="@+id/list_slidermenu"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="right"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:layout_marginBottom="50dp"-->
+        <!--            android:choiceMode="singleChoice"-->
+        <!--            android:dividerHeight="1dp"></ListView>-->
+
+    </LinearLayout>
+</RelativeLayout>

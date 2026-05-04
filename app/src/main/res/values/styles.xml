@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+   <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/alwadi</item>
+        <item name="colorPrimary">@color/nan_bar_background</item>
+        <item name="android:itemTextAppearance">@color/alwadi</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="menu_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/alwadi</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorControlNormal">@color/alwadi</item>
+
+        <item name="windowActionBar">false</item>
+
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="SearchToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        //toolbar back arrow color
+        <item name="android:textColorSecondary">@android:color/holo_blue_light</item>
+        //toolbar title color
+        <item name="android:textColorPrimary">@android:color/holo_green_dark</item>
+    </style>
+
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="tab_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabIndicatorColor">#9a4779</item>
+        <item name="tabIndicatorHeight">3dp</item>
+    </style>
+
+
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>-->
+    </style>
+
+
+    <style name="text_datepicker" parent="@android:style/Widget.Material.Light.DatePicker" tools:targetApi="lollipop">
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:calendarTextColor">@color/colorPrimaryDark</item>
+        <item name="android:dayOfWeekBackground">@color/colorPrimaryDark</item>
+        <item name="android:yearListSelectorColor">@color/colorAccent</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:minDate">01/01/2000</item>
+    </style>
+
+<!--    <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">-->
+    <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
+
+    <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/alwadi</item>
+        <item name="tabBackground">@drawable/tab_background_services</item>
+        <item name="tabIndicatorColor">@color/colorGradientEnd</item>
+        <item name="tabIndicatorHeight">3dp</item>
+    </style>
+
+
+</resources>

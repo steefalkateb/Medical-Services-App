@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:weightSum="10"
+    tools:context=".ui.doctors.DoctorsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bb"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/digestive_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الهضمية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/aa"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/heart_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="القلبية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dd"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/plasticsurgery_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الجراحة التجميلية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cc"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/dermatology_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الجلدية والتجميل"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ff"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/urologist_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="البولية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ee"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/generalsurgery_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الجراحة العامة"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hh"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/kidney_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الكلية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gg"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/nutrition_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="التغذية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/jj"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/gynecologist_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="النسائية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ii"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/endocrinologist_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الغدد"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ll"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/pediatrician_docc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الجراحة العصبية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/kk"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/pediatrician_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الأطفال"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nn"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/interior_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الداخلية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mm"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/thephysical_treatment_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="العلاج الفيزيائي"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pp"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/angiologist_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الأوعية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/oo"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/nose_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="أنف أذن حنجرة"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rr"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/osteophytes_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="العظمية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/qq"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/radiology_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الأشعة"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tt"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/chronic_pain_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الألم المزمن"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ss"
+
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/chest_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="الصدرية والتنفسية"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--        https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:layout_width="160dp"-->
+                <!--                    android:layout_height="70dp"-->
+                <!--                    android:layout_margin="5dp"-->
+                <!--                    android:clipToPadding="true"-->
+                <!--                    android:gravity="center_horizontal"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    app:cardBackgroundColor="#f9f9fa"-->
+                <!--                    app:cardCornerRadius="15dp"-->
+                <!--                    app:cardElevation="2dp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent">-->
+                <!--                    &lt;!&ndash;            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon&ndash;&gt;-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        <ImageView-->
+
+                <!--                            android:layout_width="50dp"-->
+                <!--                            android:layout_height="50dp"-->
+                <!--                            android:layout_weight="0.5"-->
+                <!--                            android:src="@drawable/heart" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginTop="15dp"-->
+                <!--                            android:layout_weight="1"-->
+                <!--                            android:gravity="center"-->
+                <!--                            android:text="الألم المزمن"-->
+                <!--                            android:textColor="@color/grey"-->
+                <!--                            android:textIsSelectable="false"-->
+                <!--                            android:textSize="15dp"-->
+                <!--                            android:textStyle="bold"-->
+                <!--                            />-->
+
+
+                <!--                    </LinearLayout>-->
+                <!--                </androidx.cardview.widget.CardView>-->
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/uu"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:clipToPadding="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="P1_bay"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="#f9f9fa"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="OnClick">
+                    <!--            https://www.iconfinder.com/icons/1513558/healthcare_hospital_medical_beat_heart_heartbeat_rate_icon-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/anesthetization_doc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="تخدير وانعاش"
+                            android:textColor="@color/grey"
+                            android:textIsSelectable="false"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+    <!--    https://morioh.com/p/2c20bffa2856-->
+    <!--    https://www.prismetric.com/cost-to-develop-online-doctor-appointment-app/-->

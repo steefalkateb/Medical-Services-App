@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:scrollbars="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/txt"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginRight="10dp"-->
+            <!--                    android:text="جديدنا"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="@color/alwadi"-->
+            <!--                    android:textSize="15dp" />-->
+            <!--            </LinearLayout>-->
+
+            <FrameLayout
+                android:id="@+id/aa23"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@+id/txt"
+                android:background="#f5f5f5">
+
+                <link.fls.swipestack.SwipeStack
+                    android:id="@+id/swipeStack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_swipestack"
+
+                    app:allowed_swipe_directions="both"
+                    app:animation_duration="300"
+                    app:stack_rotation="0"
+                    app:stack_size="3"
+                    app:stack_spacing="10dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aa23">
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:layout_marginRight="10dp"-->
+                <!--                    android:text="خدماتنا"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textColor="@color/alwadi"-->
+                <!--                    android:textSize="15dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="خدماتنا"
+                    android:textColor="@color/alwadi"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+<!--                android:textSize="15dp"-->
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aa"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:id="@+id/doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView"
+                    android:layout_alignTop="@+id/myImageView"
+                    android:layout_alignRight="@+id/myImageView"
+                    android:layout_alignBottom="@+id/myImageView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="العيادة الجلدية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bb"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_2" />
+
+                <TextView
+                    android:id="@+id/doctor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView2"
+                    android:layout_alignTop="@+id/myImageView2"
+                    android:layout_alignRight="@+id/myImageView2"
+                    android:layout_alignBottom="@+id/myImageView2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="العيادة الهضمية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cc"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_3"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView3"
+                    android:layout_alignTop="@+id/myImageView3"
+                    android:layout_alignRight="@+id/myImageView3"
+                    android:layout_alignBottom="@+id/myImageView3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="أمراض الغدد والداء السكري"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dd"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_4"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView4"
+                    android:layout_alignTop="@+id/myImageView4"
+                    android:layout_alignRight="@+id/myImageView4"
+                    android:layout_alignBottom="@+id/myImageView4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="الأمراض الصدرية و التنفسية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ee"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_5"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView5"
+                    android:layout_alignTop="@+id/myImageView5"
+                    android:layout_alignRight="@+id/myImageView5"
+                    android:layout_alignBottom="@+id/myImageView5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة أمراض القلب والأوعية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ff"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_6"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView6"
+                    android:layout_alignTop="@+id/myImageView6"
+                    android:layout_alignRight="@+id/myImageView6"
+                    android:layout_alignBottom="@+id/myImageView6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة الجراحة التجميلية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gg"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_20"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView7"
+                    android:layout_alignTop="@+id/myImageView7"
+                    android:layout_alignRight="@+id/myImageView7"
+                    android:layout_alignBottom="@+id/myImageView7"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="العيادة الداخلية"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hh"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_9"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView9"
+                    android:layout_alignTop="@+id/myImageView9"
+                    android:layout_alignRight="@+id/myImageView9"
+                    android:layout_alignBottom="@+id/myImageView9"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة الأمراض البولية و التناسلية ومعالجة العقم"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/jj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ii"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_10"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView10"
+                    android:layout_alignTop="@+id/myImageView10"
+                    android:layout_alignRight="@+id/myImageView10"
+                    android:layout_alignBottom="@+id/myImageView10"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة الجراحة العامة"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/kk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jj"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_11"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView11"
+                    android:layout_alignTop="@+id/myImageView11"
+                    android:layout_alignRight="@+id/myImageView11"
+                    android:layout_alignBottom="@+id/myImageView11"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة العلاج الفيزيائي"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kk"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_12"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView12"
+                    android:layout_alignTop="@+id/myImageView12"
+                    android:layout_alignRight="@+id/myImageView12"
+                    android:layout_alignBottom="@+id/myImageView12"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة التغذية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_13"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView13"
+                    android:layout_alignTop="@+id/myImageView13"
+                    android:layout_alignRight="@+id/myImageView13"
+                    android:layout_alignBottom="@+id/myImageView13"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة الأشعة ( ايكو _ أشعة بسيطة _ بانوراما )"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mm"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_14"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView14"
+                    android:layout_alignTop="@+id/myImageView14"
+                    android:layout_alignRight="@+id/myImageView14"
+                    android:layout_alignBottom="@+id/myImageView14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة النسائية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/oo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nn"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_15"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView15"
+                    android:layout_alignTop="@+id/myImageView15"
+                    android:layout_alignRight="@+id/myImageView15"
+                    android:layout_alignBottom="@+id/myImageView15"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة العظمية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oo"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_16"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView16"
+                    android:layout_alignTop="@+id/myImageView16"
+                    android:layout_alignRight="@+id/myImageView16"
+                    android:layout_alignBottom="@+id/myImageView16"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة الأطفال"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pp"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_17"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView17"
+                    android:layout_alignTop="@+id/myImageView17"
+                    android:layout_alignRight="@+id/myImageView17"
+                    android:layout_alignBottom="@+id/myImageView17"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة الجراحة العصبية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qq"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_18"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView18"
+                    android:layout_alignTop="@+id/myImageView18"
+                    android:layout_alignRight="@+id/myImageView18"
+                    android:layout_alignBottom="@+id/myImageView18"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="طب عام اسعاف"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rr"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_19"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView19"
+                    android:layout_alignTop="@+id/myImageView19"
+                    android:layout_alignRight="@+id/myImageView19"
+                    android:layout_alignBottom="@+id/myImageView19"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة جراحة الأوعية الدموية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ss"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_7"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView20"
+                    android:layout_alignTop="@+id/myImageView20"
+                    android:layout_alignRight="@+id/myImageView20"
+                    android:layout_alignBottom="@+id/myImageView20"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="عيادة أمراض الأذن و الأنف و الحنجرة"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/uu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tt"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myImageView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_21"
+
+                    />
+
+                <TextView
+                    android:id="@+id/doctor21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/myImageView21"
+                    android:layout_alignTop="@+id/myImageView21"
+                    android:layout_alignRight="@+id/myImageView21"
+                    android:layout_alignBottom="@+id/myImageView21"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="الكلية"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/z"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/uu"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

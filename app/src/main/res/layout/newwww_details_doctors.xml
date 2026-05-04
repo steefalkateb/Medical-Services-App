@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:scrollbars="vertical"
+    tools:context=".ui.doctors.Details_Doctors">
+    <!--    https://search.muz.li/MWViM2ZjNTk2-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--            -->
+            <!--            -->
+            <!--            -->
+
+            <RelativeLayout
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#88000000">
+
+                <ImageView
+                    android:id="@+id/imgvw"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_ionic"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/vv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/bb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/shadow_service_clinic"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="معالجة آثار حب الشباب والندبات"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--            -->
+            <!--            -->
+            <!--            -->
+
+            <RelativeLayout
+                android:id="@+id/cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rr"
+                android:layout_margin="5dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/specialty"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:gravity="right"-->
+<!--                    android:text="الاختصاص"-->
+<!--                    android:textColor="@color/alwadi"-->
+<!--                    android:textDirection="rtl"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <View-->
+<!--                    android:id="@+id/view1"-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_below="@+id/specialty"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:background="#ececec" />-->
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:text="text"
+                    android:textColor="#343434"
+
+                    android:textDirection="rtl"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/desc"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+
+                    android:text="text"
+                    android:textColor="#343434"
+                    android:textDirection="rtl"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc2"
+                    android:layout_marginRight="10dp"
+                    android:text="خدماتنا :"
+
+                    android:textColor="@color/alwadi"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cc"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight=".25"
+                android:clickable="true"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+
+                <ListView
+                    android:id="@+id/list_slidermenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="391dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:choiceMode="singleChoice"
+                    android:background="#f5f5f5"
+                    android:divider="@null"
+                    android:fillViewport="true"
+                    android:scrollbars="none"></ListView>
+<!--                android:dividerHeight="10.0sp"-->
+<!--                android:divider="#ececec"-->
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="8dp" android:height="8dp"
+        android:drawable="@drawable/img_1"
+        android:state_expanded="true" />
+
+    <item
+        android:width="8dp" android:height="8dp"
+        android:drawable="@drawable/doctor" />
+</selector>
