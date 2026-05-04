@@ -4,14 +4,24 @@
 
  <tr>
     <td>
-      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/b3079a3ea3467ff112f3b0b500b7a6e84b3ba51e/app/src/main/res/drawable/1.jpg" width="400">
+      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/b3079a3ea3467ff112f3b0b500b7a6e84b3ba51e/app/src/main/res/drawable/1.jpg" width="150">
     </td>
     <td>
-      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/b3079a3ea3467ff112f3b0b500b7a6e84b3ba51e/app/src/main/res/drawable/2.jpg" width="400">
+      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/b3079a3ea3467ff112f3b0b500b7a6e84b3ba51e/app/src/main/res/drawable/2.jpg" width="150">
     </td>
 
    <td>
-      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/b3079a3ea3467ff112f3b0b500b7a6e84b3ba51e/app/src/main/res/drawable/2.jpg" width="400">
+      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/7b8f42d1ac5d665910a5b927f62e233bfdcc9c74/app/src/main/res/drawable/3.jpeg" width="150">
+    </td>
+    <td>
+      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/7b8f42d1ac5d665910a5b927f62e233bfdcc9c74/app/src/main/res/drawable/4.jpeg" width="150">
+    </td>
+    <td>
+      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/7b8f42d1ac5d665910a5b927f62e233bfdcc9c74/app/src/main/res/drawable/5.jpeg" width="150">
+    </td>
+
+   <td>
+      <img src="https://github.com/steefalkateb/Medical-Services-App/blob/7b8f42d1ac5d665910a5b927f62e233bfdcc9c74/app/src/main/res/drawable/6.jpeg" width="150">
     </td>
  </tr>
 </table>
